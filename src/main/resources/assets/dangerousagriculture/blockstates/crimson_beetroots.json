@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "dangerousagriculture:block/crimson_beetroots0" },
+    "age=1": { "model": "dangerousagriculture:block/crimson_beetroots1" },
+    "age=2": { "model": "dangerousagriculture:block/crimson_beetroots2" },
+    "age=3": { "model": "dangerousagriculture:block/crimson_beetroots3" }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "dangerousagriculture:blocks/blackberry_bush_stage3"
+  }
+}

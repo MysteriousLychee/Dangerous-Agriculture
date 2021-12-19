@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "dangerousagriculture:block/blackberry_bush0" },
+    "age=1": { "model": "dangerousagriculture:block/blackberry_bush1" },
+    "age=2": { "model": "dangerousagriculture:block/blackberry_bush2" },
+    "age=3": { "model": "dangerousagriculture:block/blackberry_bush3" }
+  }
+}

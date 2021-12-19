@@ -1,0 +1,12 @@
+{
+  "variants": {
+    "age=0": { "model": "dangerousagriculture:block/pepper_bush0" },
+    "age=1": { "model": "dangerousagriculture:block/pepper_bush1" },
+    "age=2": { "model": "dangerousagriculture:block/pepper_bush2" },
+    "age=3": { "model": "dangerousagriculture:block/pepper_bush3" },
+    "age=4": { "model": "dangerousagriculture:block/pepper_bush4" },
+    "age=5": { "model": "dangerousagriculture:block/pepper_bush5" },
+    "age=6": { "model": "dangerousagriculture:block/pepper_bush6" },
+    "age=7": { "model": "dangerousagriculture:block/pepper_bush7" }
+  }
+}

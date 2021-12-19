@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "dangerousagriculture:blocks/warped_carrots_stage3"
+  }
+}

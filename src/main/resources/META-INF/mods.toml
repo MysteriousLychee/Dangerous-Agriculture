@@ -1,0 +1,30 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="MIT License"
+[[mods]]
+modId="dangerousagriculture"
+version="${file.jarVersion}"
+displayName="Dangerous Agriculture"
+updateJSONURL="https://raw.githubusercontent.com/SomebodyWillDie/Dangerous-Agriculture/main/update.json"
+displayURL="https://somebodywilldie.wixsite.com/dangerousagriculture"
+logoFile="logo.png"
+credits="The Official Forge Discord, and all of it's wonderful people, and also my friend, FluffySkunkBoy, for making some of the art!"
+authors="SomebodyWillDie"
+description='''
+Dangerous Agriculture adds many things well, agriculture related!
+But be careful, as sometimes, things can get dangerous!
+'''
+
+[[dependencies.dangerousagriculture]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.dangerousagriculture]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.1,1.19)"
+    ordering="NONE"
+    side="BOTH"

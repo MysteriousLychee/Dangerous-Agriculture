@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern":
+  [
+    "n  ",
+    " n ",
+    "   "
+  ],
+  "key":
+  {
+    "n":
+    {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "result":
+  {
+    "item": "dangerousagriculture:blade",
+    "count": 1
+  }
+}

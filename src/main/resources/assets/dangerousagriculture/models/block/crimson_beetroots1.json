@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "dangerousagriculture:blocks/crimson_beetroots_stage1"
+  }
+}

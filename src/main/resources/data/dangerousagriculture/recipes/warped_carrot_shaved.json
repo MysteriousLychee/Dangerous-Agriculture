@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "dangerousagriculture:warped_carrot"
+    },
+    {
+      "item": "dangerousagriculture:blade"
+    }
+  ],
+  "result":
+  {
+    "item": "dangerousagriculture:warped_carrot_shaved",
+    "count": 1
+  }
+}

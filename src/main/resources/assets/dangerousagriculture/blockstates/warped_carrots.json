@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "age=0": { "model": "dangerousagriculture:block/warped_carrots0" },
+    "age=1": { "model": "dangerousagriculture:block/warped_carrots1" },
+    "age=2": { "model": "dangerousagriculture:block/warped_carrots2" },
+    "age=3": { "model": "dangerousagriculture:block/warped_carrots3" }
+  }
+}
