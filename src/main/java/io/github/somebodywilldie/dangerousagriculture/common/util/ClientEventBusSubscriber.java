@@ -18,5 +18,6 @@ public class ClientEventBusSubscriber
         ItemBlockRenderTypes.setRenderLayer(BlockInit.WARPED_CARROTS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.CRIMSON_BEETROOTS.get(), RenderType.cutout());
         ItemBlockRenderTypes.setRenderLayer(BlockInit.BLACKBERRY_BUSH.get(), RenderType.cutout());
+        ItemBlockRenderTypes.setRenderLayer(BlockInit.BLACKBERRY_BUSH.get(), RenderType.cutout());
     }
 }

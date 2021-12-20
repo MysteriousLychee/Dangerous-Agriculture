@@ -5,6 +5,6 @@
 		"1.18.1-recommended": "1.0.0"
 	},
 	"1.18.1": {
-		"<modversion>": "<changelog for this version>"
+		"1.0.0": "First release!"
 	}
 }

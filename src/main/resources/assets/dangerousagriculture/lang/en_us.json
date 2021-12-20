@@ -1,15 +1,16 @@
 {
-  "itemGroup.dangerousagriculturetab": "Dangerous Agriculture",
-
-  "item.dangerousagriculture.pepper": "Chili Pepper",
-  "item.dangerousagriculture.blade": "Blade",
-  "item.dangerousagriculture.warped_carrot_shaved": "Shaved Warped Carrot",
-
-  "block.dangerousagriculture.pepper_bush": "Pepper Seeds",
-  "block.dangerousagriculture.warped_carrots": "Warped Carrot",
-  "block.dangerousagriculture.crimson_beetroots": "Crimson Beetroot",
-  "block.dangerousagriculture.blackberry_bush": "Blackberry",
-
-  "death.attack.blackBerryBush": "%1$s was pricked to death by a blackberry bush.",
-  "death.attack.blackBerryBush.player": "%1$s was poked to death by a blackberry bush whilst trying to escape %2$s"
+	"itemGroup.dangerousagriculturetab": "Dangerous Agriculture",
+	"item.dangerousagriculture.pepper": "Chili Pepper",
+	"item.dangerousagriculture.blade": "Blade",
+	"item.dangerousagriculture.warped_carrot_shaved": "Shaved Warped Carrot",
+	"block.dangerousagriculture.pepper_bush": "Pepper Seeds",
+	"block.dangerousagriculture.warped_carrots": "Warped Carrot",
+	"block.dangerousagriculture.crimson_beetroots": "Crimson Beetroot",
+	"block.dangerousagriculture.blackberry_bush": "Blackberry",
+	"block.dangerousagriculture.hollyberry_bush": "Holly Berries",
+	
+	"death.attack.blackBerryBush": "%1$s was pricked to death by a blackberry bush.",
+	"death.attack.blackBerryBush.player": "%1$s was poked to death by a blackberry bush whilst trying to escape %2$s",
+	"death.attack.hollyBerryBush": "%1$s was pricked to death by a holly bush.",
+	"death.attack.hollyBerryBush.player": "%1$s was poked to death by a holly bush whilst trying to escape %2$s"
 }

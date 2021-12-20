@@ -7,13 +7,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dangerousagriculture:blackberry"
+          "name": "dangerousagriculture:hollyberry"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "dangerousagriculture:blackberry_bush",
+          "block": "dangerousagriculture:hollyberry_bush",
           "properties": {
             "age": "3"
           }
@@ -45,13 +45,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "dangerousagriculture:blackberry"
+          "name": "dangerousagriculture:hollyberry"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "dangerousagriculture:blackberry_bush",
+          "block": "dangerousagriculture:hollyberry_bush",
           "properties": {
             "age": "2"
           }
