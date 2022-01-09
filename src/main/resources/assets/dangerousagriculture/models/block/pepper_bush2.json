@@ -1,6 +1,6 @@
 {
-  "parent": "block/cross",
-  "textures": {
-    "cross": "dangerousagriculture:blocks/pepper_bush_stage2"
-  }
+	"parent": "dangerousagriculture:block/crop_cross",
+	"textures": {
+		"cross": "dangerousagriculture:blocks/pepper_bush_stage2"
+	}
 }
