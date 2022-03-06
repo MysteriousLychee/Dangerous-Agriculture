@@ -5,6 +5,7 @@ import io.github.somebodywilldie.dangerousagriculture.common.block.BlackberryBus
 import io.github.somebodywilldie.dangerousagriculture.common.block.CrimsonBeetrootBlock;
 import io.github.somebodywilldie.dangerousagriculture.common.block.HollyberrryBushBlock;
 import io.github.somebodywilldie.dangerousagriculture.common.block.PepperBushBlock;
+import io.github.somebodywilldie.dangerousagriculture.common.block.PoisonIvyBlock;
 import io.github.somebodywilldie.dangerousagriculture.common.block.WarpedCarrotsBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -24,4 +25,5 @@ public class BlockInit
     public static final RegistryObject<Block> CRIMSON_BEETROOTS = BLOCKS.register("crimson_beetroots", () -> new CrimsonBeetrootBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush", () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
     public static final RegistryObject<Block> HOLLYBERRY_BUSH = BLOCKS.register("hollyberry_bush", () -> new HollyberrryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
+    public static final RegistryObject<Block> POISON_IVY_BLOCK = BLOCKS.register("poison_ivy_block", () -> new PoisonIvyBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().sound(SoundType.VINE)));
 }
