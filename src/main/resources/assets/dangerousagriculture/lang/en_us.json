@@ -11,7 +11,9 @@
 	"block.dangerousagriculture.poison_ivy_block": "Poison Ivy",
 	
 	"death.attack.blackBerryBush": "%1$s was pricked to death by a blackberry bush.",
-	"death.attack.blackBerryBush.player": "%1$s was poked to death by a blackberry bush whilst trying to escape %2$s",
+	"death.attack.blackBerryBush.player": "%1$s was pricked to death by a blackberry bush whilst trying to escape %2$s",
 	"death.attack.hollyBerryBush": "%1$s was pricked to death by a holly bush.",
-	"death.attack.hollyBerryBush.player": "%1$s was poked to death by a holly bush whilst trying to escape %2$s"
+	"death.attack.hollyBerryBush.player": "%1$s was pricked to death by a holly bush whilst trying to escape %2$s",
+	"death.attack.poisonIvyBlock": "%1$s died of extreme rash after touching poison ivy.",
+	"death.attack.poisonIvyBlock.player": "%1$s was distracted by their itchiness and was killed whilst trying to escape %2$s"
 }
