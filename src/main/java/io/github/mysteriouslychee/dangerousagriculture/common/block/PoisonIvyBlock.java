@@ -18,7 +18,6 @@ public class PoisonIvyBlock extends VineBlock {
 
 	@Override
 	public void entityInside(BlockState state, Level lvl, BlockPos pos, Entity entity) {
-		// TODO Make into switch case to determine when to stuck the entity in block
 		entity.makeStuckInBlock(state, new Vec3((double) 0.8F, 0.75D, (double) 0.8F));
 
 		if (!lvl.isClientSide && (entity.xOld != entity.getX() || entity.zOld != entity.getZ())) {
@@ -26,7 +25,7 @@ public class PoisonIvyBlock extends VineBlock {
 			double d1 = Math.abs(entity.getZ() - entity.zOld);
 			
 			if (d0 >= (double) 0.003F || d1 >= (double) 0.003F) {
-				entity.hurt(POISON_IVY_DAMAGE_SRC, 1.0F);
+				entity.hurt(POISON_IVY_DAMAGE_SRC, 0.5F);
 			}
 		}
 	}

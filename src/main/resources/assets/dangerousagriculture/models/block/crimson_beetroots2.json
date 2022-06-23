@@ -1,5 +1,5 @@
 {
-  "parent": "block/crop",
+  "parent": "dangerousagriculture:block/raised_crop",
   "textures": {
     "crop": "dangerousagriculture:blocks/crimson_beetroots_stage2"
   }
