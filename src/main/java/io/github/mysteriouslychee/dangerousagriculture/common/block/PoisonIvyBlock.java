@@ -1,4 +1,4 @@
-package io.github.somebodywilldie.dangerousagriculture.common.block;
+package io.github.mysteriouslychee.dangerousagriculture.common.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;

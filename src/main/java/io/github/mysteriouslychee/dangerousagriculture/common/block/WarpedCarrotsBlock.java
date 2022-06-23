@@ -1,8 +1,9 @@
-package io.github.somebodywilldie.dangerousagriculture.common.block;
+package io.github.mysteriouslychee.dangerousagriculture.common.block;
 
-import io.github.somebodywilldie.dangerousagriculture.core.init.ItemInit;
+import io.github.mysteriouslychee.dangerousagriculture.core.init.ItemInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -54,7 +55,7 @@ public class WarpedCarrotsBlock extends BushBlock
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel sLevel, BlockPos pos, Random rand) {
+    public void randomTick(BlockState state, ServerLevel sLevel, BlockPos pos, RandomSource rand) {
         int i = state.getValue(AGE);
         if (i < 3 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(sLevel, pos, state, rand.nextInt(10) == 0)) {
             state = state.setValue(AGE, Integer.valueOf(i + 1));

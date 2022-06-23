@@ -1,4 +1,4 @@
-package io.github.somebodywilldie.dangerousagriculture.common.item;
+package io.github.mysteriouslychee.dangerousagriculture.common.item;
 
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;

@@ -1,12 +1,12 @@
-package io.github.somebodywilldie.dangerousagriculture.core.init;
+package io.github.mysteriouslychee.dangerousagriculture.core.init;
 
-import io.github.somebodywilldie.dangerousagriculture.DangerousAgriculture;
-import io.github.somebodywilldie.dangerousagriculture.common.block.BlackberryBushBlock;
-import io.github.somebodywilldie.dangerousagriculture.common.block.CrimsonBeetrootBlock;
-import io.github.somebodywilldie.dangerousagriculture.common.block.HollyberrryBushBlock;
-import io.github.somebodywilldie.dangerousagriculture.common.block.PepperBushBlock;
-import io.github.somebodywilldie.dangerousagriculture.common.block.PoisonIvyBlock;
-import io.github.somebodywilldie.dangerousagriculture.common.block.WarpedCarrotsBlock;
+import io.github.mysteriouslychee.dangerousagriculture.DangerousAgriculture;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.BlackberryBushBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.CrimsonBeetrootBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.HollyberrryBushBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.PepperBushBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.PoisonIvyBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.WarpedCarrotsBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;

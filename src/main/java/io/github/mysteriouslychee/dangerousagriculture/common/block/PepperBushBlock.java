@@ -1,6 +1,6 @@
-package io.github.somebodywilldie.dangerousagriculture.common.block;
+package io.github.mysteriouslychee.dangerousagriculture.common.block;
 
-import io.github.somebodywilldie.dangerousagriculture.core.init.ItemInit;
+import io.github.mysteriouslychee.dangerousagriculture.core.init.ItemInit;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;

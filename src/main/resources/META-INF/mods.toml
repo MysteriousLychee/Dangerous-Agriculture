@@ -1,6 +1,7 @@
 modLoader="javafml"
-loaderVersion="[39,)"
+loaderVersion="[41,)"
 license="MIT License"
+issueTrackerURL="https://github.com/MysteriousLychee/Dangerous-Agriculture/issues"
 [[mods]]
 modId="dangerousagriculture"
 version="${file.jarVersion}"
@@ -8,23 +9,22 @@ displayName="Dangerous Agriculture"
 updateJSONURL="https://raw.githubusercontent.com/SomebodyWillDie/Dangerous-Agriculture/main/src/main/resources/updatechecker.json"
 displayURL="https://somebodywilldie.wixsite.com/dangerousagriculture"
 logoFile="logo.png"
-credits="The Official Forge Discord, and all of it's wonderful people, and also my friend, FluffySkunkBoy, for making some of the art!"
-authors="SomebodyWillDie"
+credits="The Official Forge Discord, and all of it's wonderful people, and also my friend, Jack for making some of the art!"
+authors="MysteriousLychee"
+displayTest="MATCH_VERSION"
 description='''
 Dangerous Agriculture adds many things well, agriculture related!
 But be careful, as sometimes, things can get dangerous!
 '''
-
 [[dependencies.dangerousagriculture]]
     modId="forge"
     mandatory=true
-    versionRange="[39,)"
+    versionRange="[41,)"
     ordering="NONE"
     side="BOTH"
-
 [[dependencies.dangerousagriculture]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.18.1,1.19)"
+    versionRange="[1.19,1.20)"
     ordering="NONE"
     side="BOTH"

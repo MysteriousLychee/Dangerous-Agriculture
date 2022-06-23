@@ -1,7 +1,7 @@
-package io.github.somebodywilldie.dangerousagriculture.common.util;
+package io.github.mysteriouslychee.dangerousagriculture.common.util;
 
-import io.github.somebodywilldie.dangerousagriculture.DangerousAgriculture;
-import io.github.somebodywilldie.dangerousagriculture.core.init.BlockInit;
+import io.github.mysteriouslychee.dangerousagriculture.DangerousAgriculture;
+import io.github.mysteriouslychee.dangerousagriculture.core.init.BlockInit;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraftforge.api.distmarker.Dist;

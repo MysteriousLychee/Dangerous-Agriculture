@@ -1,7 +1,7 @@
-package io.github.somebodywilldie.dangerousagriculture;
+package io.github.mysteriouslychee.dangerousagriculture;
 
-import io.github.somebodywilldie.dangerousagriculture.core.init.BlockInit;
-import io.github.somebodywilldie.dangerousagriculture.core.init.ItemInit;
+import io.github.mysteriouslychee.dangerousagriculture.core.init.BlockInit;
+import io.github.mysteriouslychee.dangerousagriculture.core.init.ItemInit;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.common.MinecraftForge;

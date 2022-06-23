@@ -1,7 +1,7 @@
-package io.github.somebodywilldie.dangerousagriculture.core.init;
+package io.github.mysteriouslychee.dangerousagriculture.core.init;
 
-import io.github.somebodywilldie.dangerousagriculture.DangerousAgriculture;
-import io.github.somebodywilldie.dangerousagriculture.common.item.CrimsonBeetrootItem;
+import io.github.mysteriouslychee.dangerousagriculture.DangerousAgriculture;
+import io.github.mysteriouslychee.dangerousagriculture.common.item.CrimsonBeetrootItem;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.food.FoodProperties;
