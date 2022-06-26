@@ -21,9 +21,9 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.Vec3;
 
-public class HollyberrryBushBlock extends SweetBerryBushBlock
+public class HollyberryBushBlock extends SweetBerryBushBlock
 {
-    public HollyberrryBushBlock(BlockBehaviour.Properties properties) {
+    public HollyberryBushBlock(BlockBehaviour.Properties properties) {
         super(properties);
         this.registerDefaultState(this.stateDefinition.any().setValue(AGE, Integer.valueOf(0)));
     }

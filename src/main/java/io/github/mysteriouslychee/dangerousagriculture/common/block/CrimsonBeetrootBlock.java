@@ -17,8 +17,6 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.PlantType;
 
-import java.util.Random;
-
 public class CrimsonBeetrootBlock extends BushBlock
 {
     public static final IntegerProperty AGE = BlockStateProperties.AGE_3;

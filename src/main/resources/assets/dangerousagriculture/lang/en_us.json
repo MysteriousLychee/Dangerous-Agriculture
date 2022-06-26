@@ -9,6 +9,7 @@
 	"block.dangerousagriculture.blackberry_bush": "Blackberry",
 	"block.dangerousagriculture.hollyberry_bush": "Holly Berries",
 	"block.dangerousagriculture.poison_ivy_block": "Poison Ivy",
+	"block.dangerousagriculture.tnt_berry_bush": "Tnt Berries",
 	
 	"death.attack.blackBerryBush": "%1$s was pricked to death by a blackberry bush.",
 	"death.attack.blackBerryBush.player": "%1$s was pricked to death by a blackberry bush whilst trying to escape %2$s",

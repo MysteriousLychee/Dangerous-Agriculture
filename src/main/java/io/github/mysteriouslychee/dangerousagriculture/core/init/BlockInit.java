@@ -1,12 +1,7 @@
 package io.github.mysteriouslychee.dangerousagriculture.core.init;
 
 import io.github.mysteriouslychee.dangerousagriculture.DangerousAgriculture;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.BlackberryBushBlock;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.CrimsonBeetrootBlock;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.HollyberrryBushBlock;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.PepperBushBlock;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.PoisonIvyBlock;
-import io.github.mysteriouslychee.dangerousagriculture.common.block.WarpedCarrotsBlock;
+import io.github.mysteriouslychee.dangerousagriculture.common.block.*;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -24,6 +19,7 @@ public class BlockInit
     public static final RegistryObject<Block> WARPED_CARROTS = BLOCKS.register("warped_carrots", () -> new WarpedCarrotsBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> CRIMSON_BEETROOTS = BLOCKS.register("crimson_beetroots", () -> new CrimsonBeetrootBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().instabreak().sound(SoundType.CROP)));
     public static final RegistryObject<Block> BLACKBERRY_BUSH = BLOCKS.register("blackberry_bush", () -> new BlackberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
-    public static final RegistryObject<Block> HOLLYBERRY_BUSH = BLOCKS.register("hollyberry_bush", () -> new HollyberrryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
+    public static final RegistryObject<Block> HOLLYBERRY_BUSH = BLOCKS.register("hollyberry_bush", () -> new HollyberryBushBlock(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
     public static final RegistryObject<Block> POISON_IVY_BLOCK = BLOCKS.register("poison_ivy_block", () -> new PoisonIvyBlock(BlockBehaviour.Properties.of(Material.PLANT).noCollission().randomTicks().sound(SoundType.VINE)));
+    public static final RegistryObject<Block> TNT_BERRY_BUSH = BLOCKS.register("tnt_berry_bush", () -> new TntBerryBush(BlockBehaviour.Properties.copy(Blocks.SWEET_BERRY_BUSH)));
 }
