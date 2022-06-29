@@ -8,6 +8,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.VineBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import org.jetbrains.annotations.NotNull;
 
 public class PoisonIvyBlock extends VineBlock {
 
@@ -16,7 +17,7 @@ public class PoisonIvyBlock extends VineBlock {
 	}
 
 	@Override
-	public void entityInside(BlockState state, Level lvl, BlockPos pos, Entity entity) {
+	public void entityInside(@NotNull BlockState state, Level lvl, @NotNull BlockPos pos, @NotNull Entity entity) {
 
 		if (!lvl.isClientSide && (entity.xOld != entity.getX() || entity.zOld != entity.getZ())) {
 			double d0 = Math.abs(entity.getX() - entity.xOld);

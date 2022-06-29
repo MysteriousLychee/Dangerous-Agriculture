@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.common.PlantType;
+import org.jetbrains.annotations.NotNull;
 
 public class CrimsonBeetrootBlock extends BushBlock
 {
@@ -28,16 +29,16 @@ public class CrimsonBeetrootBlock extends BushBlock
 
     public CrimsonBeetrootBlock(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.getStateDefinition().any().setValue(AGE, Integer.valueOf(0)));
+        this.registerDefaultState(this.getStateDefinition().any().setValue(AGE, 0));
     }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter getter, BlockPos pos, CollisionContext context) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return SHAPE_BY_AGE[state.getValue(AGE)];
     }
 
     @Override
-    protected boolean mayPlaceOn(BlockState state, BlockGetter getter, BlockPos pos) {
+    protected boolean mayPlaceOn(BlockState state, @NotNull BlockGetter getter, @NotNull BlockPos pos) {
         return state.is(Blocks.CRIMSON_NYLIUM);
     }
 
@@ -52,17 +53,21 @@ public class CrimsonBeetrootBlock extends BushBlock
     }
 
     @Override
-    public void randomTick(BlockState state, ServerLevel sLevel, BlockPos pos, RandomSource rand) {
-        int i = state.getValue(AGE);
+    public void randomTick(@NotNull BlockState state, @NotNull ServerLevel sLevel, @NotNull BlockPos pos, @NotNull RandomSource rand) {
+        getAgeValue(state, sLevel, pos, rand, AGE);
+    }
+
+    static void getAgeValue(BlockState state, ServerLevel sLevel, BlockPos pos, RandomSource rand, IntegerProperty age) {
+        int i = state.getValue(age);
         if (i < 3 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(sLevel, pos, state, rand.nextInt(10) == 0)) {
-            state = state.setValue(AGE, Integer.valueOf(i + 1));
+            state = state.setValue(age, i + 1);
             sLevel.setBlock(pos, state, 2);
             net.minecraftforge.common.ForgeHooks.onCropsGrowPost(sLevel, pos, state);
         }
     }
 
     @Override
-    public ItemStack getCloneItemStack(BlockGetter getter, BlockPos pos, BlockState state) {
+    public @NotNull ItemStack getCloneItemStack(@NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull BlockState state) {
         return new ItemStack(ItemInit.CRIMSON_BEETROOT.get());
     }
 

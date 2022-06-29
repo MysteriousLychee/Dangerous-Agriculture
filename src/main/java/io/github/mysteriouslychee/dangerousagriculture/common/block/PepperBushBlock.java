@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
+import org.jetbrains.annotations.NotNull;
 
 public class PepperBushBlock extends CropBlock
 {
@@ -34,47 +35,39 @@ public class PepperBushBlock extends CropBlock
     public PepperBushBlock(Properties builder) { super(builder); }
 
     @Override
-    protected ItemLike getBaseSeedId() { return ItemInit.PEPPER_SEEDS.get(); }
+    protected @NotNull ItemLike getBaseSeedId() { return ItemInit.PEPPER_SEEDS.get(); }
 
     @Override
-    public VoxelShape getShape(BlockState state, BlockGetter worldIn, BlockPos pos, CollisionContext context) {
+    public @NotNull VoxelShape getShape(BlockState state, @NotNull BlockGetter worldIn, @NotNull BlockPos pos, @NotNull CollisionContext context) {
         return SHAPE_BY_AGE[state.getValue(this.getAgeProperty())];
     }
 
     private boolean isAgeFivePlus(BlockState state) {
-        if(state.getValue(this.getAgeProperty()) >= 5) {
-            return true;
-        } else {
-            return false;
-        }
+        return state.getValue(this.getAgeProperty()) >= 5;
     }
 
     @Override
-    protected int getBonemealAgeIncrease(Level level) {
+    protected int getBonemealAgeIncrease(@NotNull Level level) {
         return 1;
     }
 
     @Override
-    public boolean isValidBonemealTarget(BlockGetter getter, BlockPos pos, BlockState state, boolean p_52261_) {
-        if(isAgeFivePlus(state)) {
-            return false;
-        } else {
-            return true;
-        }
+    public boolean isValidBonemealTarget(@NotNull BlockGetter getter, @NotNull BlockPos pos, @NotNull BlockState state, boolean p_52261_) {
+        return !isAgeFivePlus(state);
     }
 
     @SuppressWarnings("deprecation")
 	@Override
-    public InteractionResult use(BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult result) {
+    public @NotNull InteractionResult use(BlockState state, @NotNull Level level, @NotNull BlockPos pos, @NotNull Player player, @NotNull InteractionHand hand, @NotNull BlockHitResult result) {
         int i = state.getValue(AGE);
         boolean flag = i >= 5;
         if (!flag && player.getItemInHand(hand).is(Items.BONE_MEAL)) {
             return InteractionResult.PASS;
         } else if (i == 7) {
             int j = 1 + level.random.nextInt(6);
-            popResource(level, pos, new ItemStack(ItemInit.PEPPER.get(), j + (flag ? 1 : 0)));
-            level.playSound((Player)null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
-            level.setBlock(pos, state.setValue(AGE, Integer.valueOf(5)), 2);
+            popResource(level, pos, new ItemStack(ItemInit.PEPPER.get(), j + 1));
+            level.playSound(null, pos, SoundEvents.SWEET_BERRY_BUSH_PICK_BERRIES, SoundSource.BLOCKS, 1.0F, 0.8F + level.random.nextFloat() * 0.4F);
+            level.setBlock(pos, state.setValue(AGE, 5), 2);
             return InteractionResult.sidedSuccess(level.isClientSide);
         } else {
             return super.use(state, level, pos, player, hand, result);

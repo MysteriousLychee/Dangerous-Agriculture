@@ -12,6 +12,7 @@ import net.minecraftforge.fml.event.lifecycle.InterModEnqueueEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.jetbrains.annotations.NotNull;
 
 @Mod(DangerousAgriculture.Reference.MOD_ID)
 public class DangerousAgriculture
@@ -41,12 +42,12 @@ public class DangerousAgriculture
         }
 
         @Override
-        public ItemStack makeIcon() {
+        public @NotNull ItemStack makeIcon() {
             return ItemInit.WARPED_CARROT.get().getDefaultInstance();
         }
     }
 
-    public class Reference
+    public static class Reference
     {
         public static final Logger LOGGER = LogManager.getLogger();
         public static final String MOD_ID = "dangerousagriculture";

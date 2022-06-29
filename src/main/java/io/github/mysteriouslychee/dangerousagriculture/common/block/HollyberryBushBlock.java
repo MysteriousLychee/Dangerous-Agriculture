@@ -8,8 +8,6 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.Entity;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
@@ -19,7 +17,6 @@ import net.minecraft.world.level.block.SweetBerryBushBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import net.minecraft.world.phys.Vec3;
 
 public class HollyberryBushBlock extends SweetBerryBushBlock
 {
@@ -54,16 +51,6 @@ public class HollyberryBushBlock extends SweetBerryBushBlock
 
     @Override
     public void entityInside(BlockState state, Level lvl, BlockPos pos, Entity entity) {
-        if (entity instanceof LivingEntity && entity.getType() != EntityType.FOX && entity.getType() != EntityType.BEE) {
-            entity.makeStuckInBlock(state, new Vec3((double)0.8F, 0.75D, (double)0.8F));
-            if (!lvl.isClientSide && state.getValue(AGE) > 0 && (entity.xOld != entity.getX() || entity.zOld != entity.getZ())) {
-                double d0 = Math.abs(entity.getX() - entity.xOld);
-                double d1 = Math.abs(entity.getZ() - entity.zOld);
-                if (d0 >= (double)0.003F || d1 >= (double)0.003F) {
-                    entity.hurt(HOLLYBERRY_BUSH, 1.0F);
-                }
-            }
-
-        }
+        BlackberryBushBlock.doBushThings(state, lvl, entity, state.getValue(AGE), HOLLYBERRY_BUSH);
     }
 }

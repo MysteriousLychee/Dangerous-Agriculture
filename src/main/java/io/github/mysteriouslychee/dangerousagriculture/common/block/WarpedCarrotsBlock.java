@@ -54,12 +54,7 @@ public class WarpedCarrotsBlock extends BushBlock
 
     @Override
     public void randomTick(BlockState state, ServerLevel sLevel, BlockPos pos, RandomSource rand) {
-        int i = state.getValue(AGE);
-        if (i < 3 && net.minecraftforge.common.ForgeHooks.onCropsGrowPre(sLevel, pos, state, rand.nextInt(10) == 0)) {
-            state = state.setValue(AGE, Integer.valueOf(i + 1));
-            sLevel.setBlock(pos, state, 2);
-            net.minecraftforge.common.ForgeHooks.onCropsGrowPost(sLevel, pos, state);
-        }
+        CrimsonBeetrootBlock.getAgeValue(state, sLevel, pos, rand, AGE);
     }
 
     @Override
