@@ -3,6 +3,7 @@
 	"item.dangerousagriculture.pepper": "Chili Pepper",
 	"item.dangerousagriculture.blade": "Blade",
 	"item.dangerousagriculture.warped_carrot_shaved": "Shaved Warped Carrot",
+	"item.dangerousagriculture.hallucinogenic_mushrooms_item": "Hallucinogenic Mushrooms",
 	"block.dangerousagriculture.pepper_bush": "Pepper Seeds",
 	"block.dangerousagriculture.warped_carrots": "Warped Carrot",
 	"block.dangerousagriculture.crimson_beetroots": "Crimson Beetroot",
@@ -10,6 +11,7 @@
 	"block.dangerousagriculture.hollyberry_bush": "Holly Berries",
 	"block.dangerousagriculture.poison_ivy_block": "Poison Ivy",
 	"block.dangerousagriculture.tnt_berry_bush": "Tnt Berries",
+	"block.dangerousagriculture.hallucinogenic_mushrooms": "Hallucinogenic Mushrooms",
 	
 	"death.attack.blackBerryBush": "%1$s was pricked to death by a blackberry bush.",
 	"death.attack.blackBerryBush.player": "%1$s was pricked to death by a blackberry bush whilst trying to escape %2$s",

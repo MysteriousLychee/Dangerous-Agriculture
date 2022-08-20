@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)"
+loaderVersion="[43,)"
 license="MIT License"
 issueTrackerURL="https://github.com/MysteriousLychee/Dangerous-Agriculture/issues"
 [[mods]]
@@ -14,17 +14,17 @@ authors="MysteriousLychee"
 displayTest="MATCH_VERSION"
 description='''
 Dangerous Agriculture adds many things well, agriculture related!
-But be careful, as sometimes, things can get dangerous!
+However, be careful, as sometimes, things can get dangerous!
 '''
 [[dependencies.dangerousagriculture]]
     modId="forge"
     mandatory=true
-    versionRange="[41,)"
+    versionRange="[43,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.dangerousagriculture]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,1.20)"
+    versionRange="[1.19.2,1.20)"
     ordering="NONE"
     side="BOTH"
